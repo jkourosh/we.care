@@ -1,0 +1,27 @@
+@import './abstracts/colors' ;
+@import './abstracts/fonts' ;
+@import './abstracts/media-query' ;
+@import './abstracts/type-scale' ;
+//@import 'media-query' as *;
+
+:root {
+	@each $color, $shades in $colors {
+        // color:$shades;
+		@each $shade, $value in $shades {
+			--clr-#{$color}-#{$shade}: #{$value};
+		}
+	}
+	@each $screen-size, $font-size in $type-scale {
+		@if $screen-size == small {
+			@each $size, $value in $font-size {
+				--fs-#{$size}: #{$value};
+			}
+		} @else {
+			@include mq(small) {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
+		}
+	}
+}

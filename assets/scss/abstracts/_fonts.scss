@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./../font/Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+		url('./../font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./../font/Gilroy-Regular.woff2') format('woff2'),
+		url('./../font/Gilroy-Regular.woff') format('woff'),
+		url('./../font/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy-Extrabold';
+	src: url('./../font/Gilroy-Extrabold.eot');
+	src: local('Gilroy Extrabold'), local('Gilroy-Black'),
+		url('./../font/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('./../font/Gilroy-Extrabold.woff2') format('woff2'),
+		url('./../font/Gilroy-Extrabold.woff') format('woff'),
+		url('./../font/Gilroy-Extrabold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+$font-family-opensans: 'Open Sans', sans-serif;
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-gilroy: 'Gilroy', sans-serif;
+$font-family-urbanist: 'Urbanist', sans-serif;
+$font-family-abel: 'Abel', sans-serif;
+
+
+$font-sizes: (
+	xxsm:.8rem,
+	xsm: 1.2rem,
+	sm: 1.4rem,
+	md: 1.7rem,
+	mdx: 2rem,
+    mdxx: 2.3rem,
+	lg:2.6rem,
+	lgx: 3rem,
+	lgxx: 4rem,
+);
+$font-weights: (
+	regular: 300,
+	medium: 500,
+	bold: 800,
+);
