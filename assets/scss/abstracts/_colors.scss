@@ -1,19 +1,21 @@
 
         $clr-primary-100: #8f9cbd;
         $clr-primary-200: #7086c2;
-        $clr-primary-300: #6985cf;
-        $clr-primary-400: #102851;
+       
+        $clr-primary-300: #014ed5; //use
+        $clr-primary-400: #102851; //use
         $clr-primary-500: #0e305d;
 
-        $clr-secondary-100: #9ebefa;
+        $clr-secondary-100:#b3becf; //use
+        // $clr-secondary-100: #9ebefa;
         $clr-secondary-200: #6e9ef7;
         $clr-secondary-300: #3e7ef4;
         $clr-secondary-400: #255b98;
         $clr-secondary-500: #062560;
 
-        $clr-teritary-100: #939497;
-        $clr-teritary-200: #9c9c9c;
-        $clr-teritary-300: #cccccf;
+        $clr-teritary-100: #cccdcf;
+        $clr-teritary-200: #b7b7b8;
+        $clr-teritary-300: #9c9c9c;
         $clr-teritary-400: #e4e7eb;
         $clr-teritary-500: #ffffff;
 
@@ -34,16 +36,20 @@
         $clr-warning-300: #f7c076;
         $clr-warning-400: #f5a856;
         $clr-warning-500: #f39a4e;
-
-        $clr-info-100: #b5d8f7;
-        $clr-info-200: #a9d0f4;
+        
+        //$clr:#f3f6fd;
+        $clr-info-100: #f3f6fd; //use
+        $clr-info-200: #ccdfff; //use
         $clr-info-300: #a2c8f2;
         $clr-info-400: #8cb0e7;
         $clr-info-500: #7da6e5;
+       
 
         $clr-light-100: #ffffff;
-        $clr-light-200: #ececec;
-        $clr-light-300: #dfdfdf;
+        $clr-light-200: #fafbfe; //use
+        $clr-light-300: #fafcfe; //use
+        //$clr-light-200: #f8f8f8;
+//        $clr-light-300: #dfdfdf;
         $clr-light-400: #b9b9b9;
         $clr-light-500: #afafaf;
    

@@ -1,0 +1,41 @@
+.popular {
+	position: relative;
+	margin-top: -10rem;
+	background-color: $clr-light-300;
+	z-index: -1;
+	&__wrapper {
+		@include flex-between(row);
+		padding: 0rem 5rem 0rem 5rem;
+	}
+	& h2 {
+		color: $clr-primary-400;
+		font-weight: FW(bold);
+		font-size: FS(lgxx);
+		padding: 15rem 5rem 1rem 5rem;
+		//padding-top: 15rem;
+	}
+	&__side {
+		@include flex-between(column);
+		border-right: 2px solid $clr-primary-300;
+		&-row {
+			color: $clr-primary-100;
+			font-weight: FW(bold);
+			font-size: FS(md);
+			padding: 1rem 1rem;
+		}
+	}
+	&__row {
+		@include flex-between(row);
+        gap: 2rem;
+	}
+    &__item{
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 2rem 4rem;
+        font-size: FS(sm);
+
+    }
+}
+.side-active {
+	color: $clr-primary-400;
+}

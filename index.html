@@ -4,356 +4,346 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/wecare.ico" />
+		<link rel="stylesheet" href="./assets/css/remixicon.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<title>We Care</title>
 	</head>
 	<body>
 		<head>
 			<div class="header container">
-				<!-- <div class="header-logo">
-					<a href="index.html">
-						 <img src="./assets/img/logo.png" alt="We Care" /> 
-                        <div class="logo">+</div>
-                        <h4>We.Care</h4>
-					</a>
-				</div> -->
 				<nav class="nav">
-					<ul class="nav__ul">
-                        <li class="nav__li">+<a href="index.html">We.care</a></li>
+					<!-- <a href="index.html"> -->
+					<img src="./assets/img/logo.png" alt="We Care" />
+						<!-- <div class="logo"></div> -->
+						<!-- <h4>We.Care</h4> -->
+					<!-- </a> -->
+
+					<ul>
 						<li class="nav__li"><a href="index.html">Find a Doctor</a></li>
 						<li class="nav__li"><a href="#">Find a Hospital</a></li>
 						<li class="nav__li"><a href="#">Health A to Z</a></li>
 						<li class="nav__li"><a href="#">Login</a></li>
-						<li class="nav__li"><a href="#">signin</a></li>
+						<!-- <button type="button" class="btn btn-primary"><a href="#">Sign In</a></button> -->
 					</ul>
+					<button type="button" class="btn btn-primary">Sign In</button>
 				</nav>
 			</div>
 		</head>
 		<main>
-            <section class="hero">
-                <div class="hero__left">
-                   
-                    <h1 >Feel better about </br>
-                        finding health-care </h1>
-                        <h4>At Healthgrades, we take a guesswork out of finding the right </br>
-                        doctors, hospitals, and care for you and your family.</h4>
-                        <button type="button" class="btn btn__primary">
-                            Profile for Every Doctor in America
-                        </button>
-                        <button type="button" class="btn btn__primary">
-                            More than 10 Milion Patient Ratings
-                        </button>
-                        <a href="#" class="btn btn__primary">Find a Doctor</a> 
-                  </div>
-                  <div class="hero__right">
+			<section class="hero container">
+				<div class="hero__wrapper">
+					<div class="hero__left">
+						<h1>Feel better about</h1>
+						<h1>	 finding health-care</h1>
+						<h4>At Healthgrades, we take a guesswork out of finding the right</br>
+						doctors, hospitals, and care for you and your family.</h4>
+						<div class="hero__left-down">
+						<button type="button" class="hero__left-btn">
+							<img src="/assets/img/ac.png" alt="ac">
+							Profile for Every</br> Doctor in America
+						</button>
+						<button type="button" class="hero__left-btn">
+							<img src="/assets/img/fing.png" alt="ac">
+							More than 10 Milion</br> Patient Ratings
+						</button>
+					</div>
+						<!-- <a href="#" class="btn btn-primary">Find a Doctor</a>  -->
+					</div>
+					<div class="hero__right">
+						<img src="/assets/img/hero2.png" alt="hero" />
+					</div>
+				</div>
 
+				<div class="hero__search">
+					<form action="" method="">
+						<!-- <div class="hero__search-icon"> -->
+                        <i class="ri-search-line ri-lg"></i>
+						<input
+							type="text"
+							name="search"
+							placeholder="Search Doctor, Conditions or Prodecures"
+							class="hero__search-input"
+						/>
+						<!-- </div> -->
+						
+						<i class="ri-map-pin-line ri-lg"></i>
+						<input
+							type="text"
+							name="location"
+							placeholder="Set your Location"
+							class="hero__search-loc"
+						/>
+						<button type="submit" class="btn btn-primary hero__search-btn">
+							<i class="ri-search-line ri-lg"></i>
+						</button>
+					</form>
+					<h2>You mey be looking for</h2>
+					<div class="hero__search-wrapper">
+						<div class="btn hero__search-tag">Family Medicine X</div>
+						<div class="btn hero__search-tag">Pediatrics X</div>
+						<div class="btn hero__search-tag">Top Hospitals X</div>
+						<div class="btn hero__search-tag">TeleHealth X</div>
+						<div class="btn hero__search-tag">COVID-19 X</div>
+						<div class="btn hero__search-tag">Orthopedic Surgery X</div>
+						<div class="btn hero__search-more">More</div>
+					</div>
+				</div>
+			</section>
+			<section class="popular">
+				<h2>Popular Search on Wecare</h2>
+				<div class="popular__wrapper">
+					<div class="popular__side">
+						<div class="popular__side-row side-active">Specialties</div>
+						<div class="popular__side-row">Conditions</div>
+						<div class="popular__side-row">Procedures</div>
+					</div>
+					<div class="popular__row">
+						<div class="popular__item">
+							<img src="/assets/img/derma.png" alt="" />
+							Dermatology
+						</div>
+						<div class="popular__item">
+							<img src="/assets/img/inter.png" alt="" />
+							Internal Medicine
+						</div>
+						<div class="popular__item">
+							<img src="assets/img/neol.png" alt="" />
+							Neurology
+						</div>
+						<div class="popular__item">
+							<img src="assets/img/medicine.png" alt="" />
+							General Medicine
+						</div>
+						<div class="popular__item">
+							<img src="assets/img/dentis.png" alt="" />
+							Dentisty
+						</div>
+						<div class="popular__item">
+							<img src="assets/img/otol.png" alt="" />
+							Otolaryngology
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="find">
+				<div class="find__wrapper">
+					<div class="find__left">
+						<h2>Find the right doctor right at your fingertips</h2>
+						<h4>Wecare give you the tools and information you need to</h4>
 
-                  </div>      
-                    <div class="hero__search">
-                        <form action="search.php" method="get">
-                            <input type="text" name="search" placeholder="Search Doctor, Conditions or Prodecures" class="hero__search-input" />
-                            <input type="text" name="location" placeholder="Set your Location" class="hero__search-loc" />
-                            <button type="submit" class="hero__search-button">Search</button>
-                        </form>
-                        <h2>You mey be looking for</h2>
-                        <div class="hero__serach-btn">
-                        Family Medicine X
-                        </div>
-                        <div class="hero__serach-btn">
-                        Pediatrics X
-                        </div>
-                        <div class="hero__serach-btn">
-                        Top Hospitals X
-                        </div>
-                        <div class="hero__serach-btn">
-                        TeleHealth X
-                        </div>
-                        <div class="hero__serach-btn">
-                        COVID-19 X
-                        </div>
-                        <div class="hero__serach-btn">
-                        Orthopedic Surgery X
-                        </div>
-                        <div class="hero__serach-more">
-                        More
-                        </div>
+						<i></i>
+						<h2>Search nearest hospital</h2>
+						<h4>Find doctores and hospitals based on the factors that matter most to you</h4>
+					</div>
+
+					<div class="find__middle">
+						<div class="find__box">
+							<h2>Find the best doctor you need</h2>
+							<input
+								type="text"
+								name="search2"
+								class="find__box-input"
+								placeholder="Search Doctor, Conditions or Prodecures"
+							/>
+							<input
+								type="text"
+								name="location2"
+								class="find__box-loc"
+								placeholder="Set your Location"
+							/>
+							<button type="submit" class="find__box-button">Search</button>
+						</div>
+					</div>
+					<div class="find__right">
+						<img src="/assets/img/dr2.png" alt="" />
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__left">
+					<img src="/assets/img/dr3.png" alt="dr3" />
+				</div>
+				<div class="why__mid-wrapper">
+					<div class="why__mid-item">
+						<img src="" alt="" />
+						<h2>Dr.henvy</h2>
+
+						<div class="why__mid-dot">...</div>
+					</div>
+					<div class="why__mid-item">
+						<img src="" alt="" />
+						<h2>Dr.henvy</h2>
+						<div class="why__mid-dot">...</div>
+					</div>
+					<div class="why__mid-item">
+						<img src="" alt="" />
+						<h2>Dr.henvy</h2>
+						<div class="why__mid-dot">...</div>
+					</div>
+					<div class="why__mid-item">
+						<img src="" alt="" />
+						<h2>Dr.henvy</h2>
+						<div class="why__mid-dot">...</div>
+					</div>
+					<div class="why__mid-item">
+						<img src="" alt="" />
+						<h2>Dr.henvy</h2>
+						<div class="why__mid-dot">...</div>
+					</div>
+                </div>
+				<div class="why__right">
+						<h2>Why you Choose We.care</h2>
+						<div class="why__right-item">
+							<i></i>
+							<h4></h4>
+						</div>
+						<div class="why__right-item">
+							<i></i>
+							<h4></h4>
+						</div>
+						<div class="why__right-item">
+							<i></i>
+							<h4></h4>
+						</div>
+						<div class="why__right-item">
+							<i></i>
+							<h4></h4>
+						</div>
+						<div class="why__right-item">
+							<i></i>
+							<h4></h4>
+						</div>
+						<button class="btn btn-primary"></button>
+					</div>
+				
+			</section>
+			<section class="meet">
+				<h2>Meet our Specialist</h2>
+				<h4>Wecare gives you the specialist and information you need to</h4>
+				<div class="meet__wrapper">
+					<div class="meet__row">
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+					</div>
+					<div class="meet__row">
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+						<div class="meet__dr">
+							<img src="/assets/img/drbox.png" alt="" />
+							<h2>Dr.</h2>
+							<h4>Dentist surgery</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="slider">...</div>
+			<section class="patient">
+				<h2>Our Patients feedback about us</h2>
+				<div class="patient__wrapper">
+					<div class="patients__left">
+						<img src="" alt="" />
+					</div>
+
+					<div class="patients__right">
+						<div class="patients__profile">
+							<img src="" alt="" />
+							<h3>Broklyn Jacoob</h3>
+							<h4>usa</h4>
+							<div class="patients__rate"></div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem autem ex
+							voluptatum dolorum provident deserunt repellendus, porro dolorem? Assumenda
+							perferendis illum possimus quaerat nihil officia architecto recusandae, ea laboriosam
+							non!
+						</p>
+					</div>
                     </div>
-                </div>
-            </section>
-            <section class="popular">
-                
-                    <h2>Popular Search on Wecare</h2>
-                    <div class="popular__side">
-                        <div class="popular__side-active">
-                        Specialties
-                        </div>
-                        <div class="popular__side-row">
-                        Conditions
-                        </div>
-                        <div class="popular__side-row">
-                        Procedures
-                        </div>
-
-                    </div>
-                    <div class="popular__row">
-                        <div class="popular__item">
-                            <img src="" alt="">
-                            Dermatology
-                        </div>
-                        <div class="popular__item">
-                            <img src="" alt="">
-                            Internal Medicine
-                        </div>
-                        <div class="popular__item">
-                            <img src="" alt="">
-                            Neurology
-                        </div>
-                        <div class="popular__item">
-                            <img src="" alt="">
-                            General Medicine
-                        </div>
-                        <div class="popular__item">
-                            <img src="" alt="">
-                            Dentisty
-                        </div>
-                        <div class="popular__item">
-                            <img src="" alt="">
-                        Otolaryngology
-                        </div>
-                    </div>
-            </section>
-            <section class="find">
-                <div class="find__left">
-
-                    <h2>Find the right doctor</br>
-                        right at your fingertips </h2>
-                    <h4>Wecare give you the tools and information you need to</h4>
-                    <div class="find__box">
-                            <i></i>
-                            <h2>Search nearest hospital</h2>
-                            <h4>Find doctores and hospitals based on the factors</br>
-                                that matter most to you</h4>
-                   </div>
-                </div>
-                    
-                <div class="find__right">
-                            <div class="find__box">
-                                <h2>Find the best doctor you need</h2>
-                            <input type="text" name="search2" class="find__box-input" placeholder="Search Doctor, Conditions or Prodecures"  />
-                            <input type="text" name="location2" class="find__box-loc" placeholder="Set your Location"  />
-                            <button type="submit" class="find__box-button">Search</button>
-                            </div>
-                            <img src="" alt="">
-                </div>
-            </section>
-            <section class="why">
-                <div class="why__left">
-<img src="" alt="">
-<div class="why__left-item">
-    <img src="" alt="">
-<h2>Dr.henvy</h2>
-<div class="why__left-dot">
-    ...
-</div>
-<div class="why__left-item">
-    <img src="" alt="">
-<h2>Dr.henvy</h2>
-<div class="why__left-dot">
-    ...
-</div>
-<div class="why__left-item">
-    <img src="" alt="">
-<h2>Dr.henvy</h2>
-<div class="why__left-dot">
-    ...
-</div>
-<div class="why__left-item">
-    <img src="" alt="">
-<h2>Dr.henvy</h2>
-<div class="why__left-dot">
-    ...
-</div>
-<div class="why__left-item">
-    <img src="" alt="">
-<h2>Dr.henvy</h2>
-<div class="why__left-dot">
-    ...
-</div>
-</div>
-                </div>
-                <div class="why__right">
-<h2>Why you Choose </br>We.care</h2>
-<div class="why__right-item">
-    <i></i>
-    <h4></h4>
-
-</div>
-<div class="why__right-item">
-    <i></i>
-    <h4></h4>
-
-</div>
-<div class="why__right-item">
-    <i></i>
-    <h4></h4>
-
-</div>
-<div class="why__right-item">
-    <i></i>
-    <h4></h4>
-
-</div>
-<div class="why__right-item">
-    <i></i>
-    <h4></h4>
-
-</div>
-<button class="btn btn-primary">
-
-</button>
-                </div>
-
-            </section>
-            <section class="meet">
-
-                <h2>Meet our Specialist</h2>
-                <h4>Wecare gives you the specialist and information you need to</h4>
-<div class="meet__wrapper">
-
-
-                <div class="meet__row">
-
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                </div>
-                <div class="meet__row">
-
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                <div class="meet__dr">
-                    <img src="" alt="">
-                    <h2>Dr.</h2>
-                    <h4>Dentist surgery</h4>
-                </div>
-                </div>
-              
-                
-                </div>
-            </section>
-            <div class="slider">
-                ...
-            </div>
-            <section class="patients">
-<h2>Our Patients feedback about us</h2>
-<div class="patients__wrapper">
-<div class="patients__left">
-    <img src="" alt="">
-   
-</div>
-
-<div class="patients__right">
-    <div class="patients__profile">
-
-    
-    <img src="" alt="">
-    <h3>Broklyn Jacoob</h3>
-    <h4>usa</h4>
-    <div class="patients__rate">
-
-    </div>
-</div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem autem ex voluptatum dolorum provident deserunt repellendus, porro dolorem? Assumenda perferendis illum possimus quaerat nihil officia architecto recusandae, ea laboriosam non!</p>
-
-</div>
-<div class="patients__subscribe">
-    <h2>subscribe for any news update from wecare</h2>
-    <input type="text" name="subscribe" id="subscribe">
-    <button type="submit" class="btn btn-primary">
-
-</div>
-
-            </section>
-        </main>
+					<div class="patient__subscribe">
+						<h2>subscribe for any news update from wecare</h2>
+						<input type="text" name="subscribe" id="subscribe" />
+						<button type="submit" class="btn btn-primary"></button>
+					</div>
+			
+			</section>
+		</main>
 		<footer>
-            <div class="footer__wrapper">
-                
-                <div class="footer_social">
-                    <i class="ri-instagram-line ri-2x"></i>
-						<i class="ri-dropbox-line ri-2x"></i>
-						<i class="ri-whatsapp-line ri-2x"></i>
-						<i class="ri-twitter-line ri-2x"></i>
-                </div>
-                <div class="footer_patient">
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-
-                </div>
-                <div class="footer_provider">
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                </div>
-                <div class="footer_partner">
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                </div>
-                <div class="footer_company">
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                    <div class="footer__link"><a href="#">link</a></div>
-                </div>
-            </div>
-
-        </footer>
+			<div class="footer__wrapper">
+				<div class="footer_social">
+					<i class="ri-instagram-line ri-2x"></i>
+					<i class="ri-dropbox-line ri-2x"></i>
+					<i class="ri-whatsapp-line ri-2x"></i>
+					<i class="ri-twitter-line ri-2x"></i>
+				</div>
+				<div class="footer_patient">
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+				</div>
+				<div class="footer_provider">
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+				</div>
+				<div class="footer_partner">
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+				</div>
+				<div class="footer_company">
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+					<div class="footer__link"><a href="#">link</a></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

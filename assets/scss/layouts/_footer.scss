@@ -1,0 +1,8 @@
+.footer{
+
+    &__wrapper{
+       @include flex-between(row);
+
+    }
+}
+

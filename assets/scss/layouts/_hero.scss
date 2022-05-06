@@ -1,0 +1,103 @@
+.hero {
+	padding-top: 10rem;
+	
+	//background-color: $clr-primary-100;
+	&__wrapper {
+		@include flex-between(row);
+		justify-content: center;
+	}
+	&__left {
+		& h1 {
+			font-family: $font-family-poppins;
+			font-size: 5rem;
+			color: $clr-primary-500;
+		}
+		& h4 {
+			font-size: FS(md);
+			padding: 3rem 0;
+			line-height: 2.5rem;
+			color: $clr-secondary-100;
+		}
+		&-down {
+			@include flex-between(row);
+			justify-content: flex-start;
+			gap: 2rem;
+		}
+		&-btn {
+			@include flex-between(row);
+			//display: inline;
+			padding: 1rem 2rem;
+			text-align: left;
+			color: $clr-light-100;
+			background-color: $clr-primary-400;
+			border-radius: 5px;
+			font-size: FS(sm);
+			gap: 1rem;
+			& img {
+				width: 25px;
+				//display: inline-block;
+			}
+		}
+	}
+
+	&__right {
+
+	}
+	&__search {
+		background-color: #fff;
+		padding: 3rem ;
+		margin: 0 auto;
+		width: 95%;
+		border-radius: 10px;
+		& form {
+			font-size: FS(mdx);
+		}
+		&-wrapper {
+			@include flex-between(row);
+			gap: 1rem;
+		}
+		& input{
+			width: 43%;
+			margin-right: 4rem;
+			padding-left: 4rem;
+			//background-color: $clr-light-200;
+			//opacity: .5;
+		}
+		& i{
+			z-index: 2;
+			margin-right: -40px;
+			color: $clr-primary-400;
+		}
+		&-btn{
+			line-height: 3.2rem;
+			margin-left: -3rem;
+			border-radius: 8px;
+			& i{
+				color: $clr-light-100;
+				margin :0;
+			}
+		}
+		& h2{
+			color: $clr-primary-400;
+			font-weight: FW(bold);
+			font-size: FS(mdx);
+			padding: 1rem 0;
+		}
+		&-tag{
+			color: $clr-primary-400;
+			background-color: $clr-info-100;
+			font-weight: FW(bold);
+			font-size: FS(sm);
+			padding: 1rem 1rem;
+			border-radius: 5px;
+		}
+		&-more{
+			color: $clr-primary-400;
+			background-color: $clr-info-200;
+			font-weight: FW(bold);
+			font-size: FS(sm);
+			padding: 1rem 1rem;
+			border-radius: 5px;
+		}
+	}
+}

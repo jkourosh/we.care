@@ -1,0 +1,11 @@
+.meet{
+
+
+    &__wrapper{
+        @include flex-between(column);
+    }
+    &__row{
+
+        @include flex-between(row);
+    }
+}

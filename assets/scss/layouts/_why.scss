@@ -1,0 +1,6 @@
+.why{
+    @include flex-between(row);
+    &__mid-wrapper{
+        @include flex-between(column);
+    }
+}

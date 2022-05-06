@@ -1,0 +1,7 @@
+.patient{
+
+    &__wrapper{
+
+        @include flex-between(row);
+    }
+}

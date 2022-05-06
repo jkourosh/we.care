@@ -11,7 +11,12 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
-
+body{
+	font-family: $font-family-abel;
+	background-color: $clr-info-100;
+	letter-spacing: 1px;
+	transition: background-color 0.25s color 0.25s;
+}
 button,
 span,
 div,
@@ -30,7 +35,69 @@ img {
 	max-width: 100%;
 	display: block;
 }
-
+input {
+	border: 1px solid $clr-teritary-100;
+	
+	
+	width: 38rem;
+	line-height: 5rem;
+	border-radius: 0.7rem;
+	margin: 1rem 0;
+	padding: 0 1rem;
+	&:focus {
+		box-shadow: 0 0 0 2px $clr-primary-400;
+	}
+}
 button {
 	cursor: pointer;
+}
+a{
+	text-decoration: none;
+}
+.btn {
+	font-family: inherit;
+	background-color: transparent;
+	outline: 0;
+
+	cursor: pointer;
+	//box-shadow: 0 0 0 0.2rem $clr-info-400;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+
+
+.btn-primary {
+	padding: 1rem 2.5rem;
+	margin: 1rem;	
+	background-color: $clr-primary-300;
+	color: $clr-light-100;
+	&:hover {
+	
+		transform: scale(1.13);
+		-webkit-transform: scale(1.13);
+		box-shadow: none;
+		& i {
+			color: $clr-info-400;
+		}
+	}
+}
+
+.btn-secondary {
+	box-shadow: 0 0 0 0.2rem $clr-info-400;
+	padding: 0.8rem 1rem;
+	margin: .5rem;
+	color: $clr-info-400;
+	font-size: FS(xsm);
+	&:hover {
+		transform: scale(1.13);
+		-webkit-transform: scale(1.13);
+		background-color: transparent;color: $clr-info-400;
+		
+	}
+}
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 10rem;
 }
