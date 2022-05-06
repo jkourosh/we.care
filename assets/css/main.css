@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: "Abel", sans-serif;
-  background-color: #f3f6fd;
+  background-color: #e3eefc;
   letter-spacing: 1px;
   -webkit-transition: background-color 0.25s color 0.25s;
   transition: background-color 0.25s color 0.25s;
@@ -334,7 +334,7 @@ a {
 
 .hero__search-tag {
   color: #102851;
-  background-color: #f3f6fd;
+  background-color: #e3eefc;
   font-weight: 800;
   font-size: 1.4rem;
   padding: 1rem 1rem;
@@ -353,7 +353,7 @@ a {
 .popular {
   position: relative;
   margin-top: -10rem;
-  background-color: #fafcfe;
+  background-color: #f7f8fc;
   z-index: -1;
 }
 
@@ -433,6 +433,11 @@ a {
   color: #102851;
 }
 
+.find {
+  padding: 8rem;
+  background-color: #f7f8fc;
+}
+
 .find__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,6 +454,61 @@ a {
           align-items: center;
 }
 
+.find i {
+  position: relative;
+  margin-right: 10px;
+  fill: #fff;
+  vertical-align: baseline;
+}
+
+.find h2 {
+  color: #102851;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.find h3 {
+  color: #102851;
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+
+.find h4 {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  line-height: 2.5rem;
+  color: #b3becf;
+  border-left: 2px solid #102851;
+}
+
+.find__middle {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 15%;
+}
+
+.find__middle i {
+  display: inline-block;
+}
+
+.find__middle input {
+  width: 100%;
+  line-height: 3.5rem;
+}
+
+.find__middle h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.find-icon {
+  color: #102851;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #eeeefd;
+}
+
 .why {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +523,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .why__mid-wrapper {
@@ -479,6 +542,86 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
+  padding: 1rem .5rem;
+  border-radius: 10px;
+}
+
+.why__mid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+.why__mid-item img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.why__mid-dot {
+  font-size: 2rem;
+  color: #b3becf;
+}
+
+.why__right {
+  padding: 1rem;
+}
+
+.why__right h2 {
+  color: #102851;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.why__right-item i {
+  display: inline;
+  color: #014ed5;
+  border: 2px solid #014ed5;
+  border-radius: 50%;
+}
+
+.why__right h4 {
+  font-size: 1.4rem;
+  color: #102851;
+  display: contents;
+}
+
+.lp {
+  display: inline-block;
+}
+
+.meet {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 10rem;
+}
+
+.meet h2 {
+  color: #102851;
+  font-size: 3rem;
+  font-weight: 800;
+  font-weight: 800;
+}
+
+.meet h4 {
+  font-size: 1.7rem;
+  padding: .5rem 0;
+  line-height: 2.5rem;
+  color: #b3becf;
 }
 
 .meet__wrapper {
@@ -511,6 +654,29 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.meet__dr {
+  background-color: #f7f8fc;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 20%;
+  height: 38rem;
+  margin: 2rem;
+}
+
+.patient {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 10rem;
+}
+
+.patient h2 {
+  color: #102851;
+  font-size: 3rem;
+  font-weight: 800;
+  font-weight: 800;
 }
 
 .patient__wrapper {

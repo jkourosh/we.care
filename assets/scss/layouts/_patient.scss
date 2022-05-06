@@ -1,5 +1,14 @@
 .patient{
-
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 0 10rem;
+    & h2{
+        color: $clr-primary-400;
+        font-size: FS(lgx);
+        font-weight: FW(bold);
+        font-weight: FW(bold);
+    }
     &__wrapper{
 
         @include flex-between(row);

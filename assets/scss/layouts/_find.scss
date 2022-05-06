@@ -1,6 +1,57 @@
-.find{
-
-    &__wrapper{
-        @include flex-between(row)
+.find {
+	padding: 8rem;
+	background-color: $clr-light-300;
+	&__wrapper {
+		@include flex-between(row);
+	}
+    & i{
+       // display: inline;
+        position: relative;
+        margin-right: 10px;
+        fill: #fff;
+        vertical-align: baseline;
     }
+	& h2 {
+		color: $clr-primary-400;
+		font-weight: FW(bold);
+		font-size: FS(lgxx);
+		//padding: 15rem 5rem 1rem 5rem;
+	}
+	& h3 {
+		color: $clr-primary-400;
+		font-weight: FW(bold);
+		font-size: FS(md);
+		//padding: 15rem 5rem 1rem 5rem;
+	}
+	& h4 {
+		font-size: FS(sm);
+		padding: 2rem 0;
+		line-height: 2.5rem;
+		color: $clr-secondary-100;
+        border-left: 2px solid $clr-primary-400;
+	}
+	&__middle {
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 1rem;
+		width: 15%;
+		& i {
+			display: inline-block;
+		}
+		& input {
+			width: 100%;
+			line-height: 3.5rem;
+		}
+		& h2 {
+			font-size: FS(md);
+			font-weight: FW(bold);
+		}
+	}
+}
+
+.find-icon {
+	color: $clr-primary-400;
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: $clr-light-350;
 }

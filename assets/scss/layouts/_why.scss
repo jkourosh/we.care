@@ -1,6 +1,49 @@
-.why{
-    @include flex-between(row);
-    &__mid-wrapper{
-        @include flex-between(column);
+.why {
+	@include flex-between(row);
+    justify-content: flex-start;
+	&__mid {
+		&-wrapper {
+			@include flex-between(column);
+			background-color: #fff;
+			padding: 1rem .5rem;
+            border-radius: 10px
+		}
+
+		&-item {
+			@include flex-between(row);
+            padding: .5rem;
+			& img {
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+				display: inline-block;
+			}
+		}
+        &-dot {
+          font-size: FS(mdx);
+          color: $clr-secondary-100;
+        }
+	}
+    &__right {
+        padding: 1rem;
+        & h2{
+            color: $clr-primary-400;
+            font-size: FS(lg);
+            font-weight: FW(bold);
+        }
+        &-item i{
+            display: inline;
+            color: $clr-primary-300;
+            border: 2px solid $clr-primary-300;
+            border-radius: 50%;
+        }
+        & h4{
+            font-size: FS(sm);
+            color: $clr-primary-400;
+            display: contents;
+        }
     }
+}
+.lp{
+    display: inline-block;
 }
