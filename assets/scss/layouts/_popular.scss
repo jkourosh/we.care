@@ -26,16 +26,29 @@
 	}
 	&__row {
 		@include flex-between(row);
-        gap: 2rem;
+		gap: 2rem;
+		padding: 1rem;
 	}
-    &__item{
-        border-radius: 10px;
-        background-color: #fff;
-        padding: 2rem 4rem;
-        font-size: FS(sm);
-
-    }
+	&__item {	
+		cursor: pointer;
+		text-align: center;
+		width: 17rem;
+		min-width: 17rem;
+		max-width: 17rem;
+		border-radius: 10px;
+		background-color: #fff;
+		padding: 2rem 2rem;
+		font-size: FS(sm);
+		transition: background 0.5s, border 0.5s;
+		border: 2px solid transparent;
+		box-shadow: rgba(143, 143, 143, 0.2) 0px 2px 11px 0px;
+	
+		& img{
+			padding-left: 3rem;
+		}
+	}
 }
+
 .side-active {
 	color: $clr-primary-400;
 }

@@ -1,8 +1,36 @@
-.footer{
+.footer {
+	&__wrapper {
+		@include flex-between(row);
+        align-items: flex-start;
+		padding: 10rem;
 
-    &__wrapper{
-       @include flex-between(row);
-
+		& img {
+			width: 50%;
+		}
+	}
+    &__links{
+        & h2{
+            font-weight: FW(bold);
+            font-size: FS(mdx);
+        }
     }
+	&__link {
+		padding: 0.5rem;
+		& a {
+			font-size: FS(mdx);
+			color: $clr-dark-100;
+		}
+	}
+	&__social {
+        width: 20%;
+        cursor: pointer;
+		& img {
+			padding-bottom: 2rem ;
+            width: 100%;
+            border-bottom: 3px solid $clr-primary-300;
+		}
+		i {
+			padding: 1rem;
+		}
+	}
 }
-

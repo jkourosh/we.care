@@ -1,16 +1,103 @@
-.patient{
-    margin: 0 auto;
-    text-align: center;
-    background-color: #fff;
-    padding: 0 10rem;
-    & h2{
-        color: $clr-primary-400;
-        font-size: FS(lgx);
-        font-weight: FW(bold);
-        font-weight: FW(bold);
-    }
-    &__wrapper{
+.patient {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #fff;
+	padding: 0 10rem;
+	& h2 {
+		color: $clr-primary-400;
+		font-family: 'Roboto', sans-serif;
+		font-size: FS(lgx);
+		font-weight: FW(bold);
+		padding: 1rem 0;
+	}
+	& h3 {
+		color: $clr-primary-400;
+		font-size: FS(md);
+	}
+	& h4 {
+		font-size: FS(sm);
+		width: 60%;
+		color: $clr-secondary-100;
+		text-align: left;
+		line-height: 3rem;
+	}
+	& h5 {
+		color: $clr-secondary-100;
+		text-align: center;
+		line-height: 3rem;
+		font-size: FS(sm);
+	}
+	& input {
+		position: relative;
+		left: 7rem;
+	}
+	&__left {
+		width: 40%;
+        & img{
+            border-radius: 15px;
+        }
+	}
+	&__right {
+		@include flex-between(column);
+		justify-content: flex-start;
+		gap: 1rem;
+		align-items: flex-start;
+		width: 60%;
+		//padding: 0 5rem;
+	}
+	&__wrapper {
+		@include flex-between(row);
+		gap: 5rem;
+	}
+	&__profile {
+		@include flex-between(row);
+		gap: 1rem;
+		& img {
+			width: 80px;
+			border-radius: 10px;
+		}
 
-        @include flex-between(row);
-    }
+		&-right {
+			@include flex-between(column);
+			align-items: flex-start;
+		}
+		&-dot {
+			font-size: 7rem;
+			color: $clr-primary-300;
+		}
+	}
+	&__rate {
+		color: orange;
+		font-size: FS(lg);
+	}
+	&__subscribe {
+		margin: 10rem auto;
+		border-radius: 15px;
+		background-color: $clr-primary-300;
+
+		padding: 4rem;
+		width: 50%;
+		& h2 {
+			color: $clr-light-100;
+			font-size: FS(lgx);
+		}
+		& input {
+			background-color: #fff;
+			position: relative;
+		}
+		& button {
+			position: relative;
+			left: -3.2rem;
+			top: 0.3rem;
+			background-color: $clr-primary-400;
+			//border-radius: 10px;
+			color: $clr-light-100;
+			font-size: FS(md);
+			font-weight: FW(bold);
+			padding: 0.5rem 1rem;
+			//margin: -10rem;
+			line-height: 3rem;
+			z-index: 999;
+		}
+	}
 }

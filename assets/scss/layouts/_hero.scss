@@ -1,5 +1,5 @@
 .hero {
-	padding-top: 10rem;
+	padding-top: 7rem;
 	
 	//background-color: $clr-primary-100;
 	&__wrapper {
@@ -57,6 +57,7 @@
 			gap: 1rem;
 		}
 		& input{
+			position: relative;
 			width: 43%;
 			margin-right: 4rem;
 			padding-left: 4rem;
@@ -64,7 +65,8 @@
 			//opacity: .5;
 		}
 		& i{
-			z-index: 2;
+			z-index: 999;
+			position: relative;
 			margin-right: -40px;
 			color: $clr-primary-400;
 		}
@@ -100,4 +102,33 @@
 			border-radius: 5px;
 		}
 	}
+}
+.dot{
+	border: 1px solid $clr-secondary-100;
+    border-radius: 55%;
+  
+    z-index: -1;
+    position: absolute;
+   
+
+}
+.p1{
+	padding: 12rem;
+	top: 25rem;
+    left: 60%;
+}
+.p2{ 
+	top: 16rem;
+    left: 54%;
+	padding: 20rem;
+}
+.p3{
+	top: 7rem;
+    left: 46%;
+	padding: 30rem;
+}
+.p4{ 
+	top: 16rem;
+    left: 54%;
+	padding: 22rem;
 }
