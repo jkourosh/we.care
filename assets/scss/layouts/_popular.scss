@@ -30,7 +30,7 @@
 		padding: 1rem;
 	}
 	&__item {	
-		cursor: pointer;
+		
 		text-align: center;
 		width: 17rem;
 		min-width: 17rem;
@@ -44,6 +44,7 @@
 		box-shadow: rgba(143, 143, 143, 0.2) 0px 2px 11px 0px;
 	
 		& img{
+			cursor: pointer;
 			padding-left: 3rem;
 		}
 	}

@@ -1,6 +1,5 @@
 .hero {
 	padding-top: 7rem;
-	
 	//background-color: $clr-primary-100;
 	&__wrapper {
 		@include flex-between(row);
@@ -41,11 +40,10 @@
 	}
 
 	&__right {
-
 	}
 	&__search {
 		background-color: #fff;
-		padding: 3rem ;
+		padding: 3rem;
 		margin: 0 auto;
 		width: 95%;
 		border-radius: 10px;
@@ -61,7 +59,7 @@
 			width: 43%;
 			margin-right: 4rem;
 			padding-left: 4rem;
-			//background-color: $clr-light-200;
+			background-color: $clr-light-200;
 			//opacity: .5;
 		}
 		& i{
@@ -70,22 +68,22 @@
 			margin-right: -40px;
 			color: $clr-primary-400;
 		}
-		&-btn{
+		&-btn {
 			line-height: 3.2rem;
 			margin-left: -3rem;
 			border-radius: 8px;
 			& i{
 				color: $clr-light-100;
-				margin :0;
+				margin: 0;
 			}
 		}
-		& h2{
+		& h2 {
 			color: $clr-primary-400;
 			font-weight: FW(bold);
 			font-size: FS(mdx);
 			padding: 1rem 0;
 		}
-		&-tag{
+		&-tag {
 			color: $clr-primary-400;
 			background-color: $clr-info-100;
 			font-weight: FW(bold);
@@ -93,9 +91,11 @@
 			padding: 1rem 1rem;
 			border-radius: 5px;
 		}
-		&-more{
+		&-more {
 			color: $clr-primary-400;
 			background-color: $clr-info-200;
+			width: 7%;
+			text-align: center;
 			font-weight: FW(bold);
 			font-size: FS(sm);
 			padding: 1rem 1rem;
@@ -103,32 +103,34 @@
 		}
 	}
 }
-.dot{
+.dot {
 	border: 1px solid $clr-secondary-100;
-    border-radius: 55%;
-  
-    z-index: -1;
-    position: absolute;
-   
-
+	border-radius: 55%;
+	z-index: -1;
+	position: absolute;
 }
-.p1{
+.p1 {
 	padding: 12rem;
 	top: 25rem;
-    left: 60%;
+	left: 60%;
 }
-.p2{ 
+.p2 {
 	top: 16rem;
-    left: 54%;
+	left: 54%;
 	padding: 20rem;
 }
-.p3{
+.p3 {
 	top: 7rem;
-    left: 46%;
+	left: 46%;
 	padding: 30rem;
 }
-.p4{ 
+.p4 {
 	top: 16rem;
-    left: 54%;
+	left: 54%;
 	padding: 22rem;
+}
+.m1{
+	position: relative;
+	top1:10rem;
+
 }

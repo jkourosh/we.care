@@ -56,6 +56,7 @@
 			font-size: FS(md);
 			line-height: 3.5rem;
 			display: inline-block;
+			background-color:$clr-light-200; ;
 		}
 		& h2 {
 			font-size: FS(lg);
@@ -64,6 +65,7 @@
 		& button{
 			width: 100%;
 			margin: 0;
+			font-size: FS(md);
 
 		}
 	}

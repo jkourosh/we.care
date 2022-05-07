@@ -325,6 +325,7 @@ a {
   width: 43%;
   margin-right: 4rem;
   padding-left: 4rem;
+  background-color: #f8f8f8;
 }
 
 .hero__search i {
@@ -364,6 +365,8 @@ a {
 .hero__search-more {
   color: #102851;
   background-color: #ccdfff;
+  width: 7%;
+  text-align: center;
   font-weight: 800;
   font-size: 1.4rem;
   padding: 1rem 1rem;
@@ -399,6 +402,11 @@ a {
   top: 16rem;
   left: 54%;
   padding: 22rem;
+}
+
+.m1 {
+  position: relative;
+  top1: 10rem;
 }
 
 .popular {
@@ -475,7 +483,6 @@ a {
 }
 
 .popular__item {
-  cursor: pointer;
   text-align: center;
   width: 17rem;
   min-width: 17rem;
@@ -492,6 +499,7 @@ a {
 }
 
 .popular__item img {
+  cursor: pointer;
   padding-left: 3rem;
 }
 
@@ -571,6 +579,7 @@ a {
   font-size: 1.7rem;
   line-height: 3.5rem;
   display: inline-block;
+  background-color: #f8f8f8;
 }
 
 .find__middle h2 {
@@ -581,6 +590,7 @@ a {
 .find__middle button {
   width: 100%;
   margin: 0;
+  font-size: 1.7rem;
 }
 
 .find-icon {
@@ -806,6 +816,8 @@ a {
   background-color: #f7f8fc;
   -webkit-box-shadow: 0 0 8px 1px #afafaf;
           box-shadow: 0 0 8px 1px #afafaf;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .patient {
