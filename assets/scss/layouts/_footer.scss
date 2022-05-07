@@ -1,36 +1,49 @@
 .footer {
+	background-color1 : #fff;
 	&__wrapper {
+		margin: 2rem 0;
 		@include flex-between(row);
-        align-items: flex-start;
-		padding: 10rem;
+		align-items: flex-start;
+		padding: 0 10rem;
 
 		& img {
 			width: 50%;
 		}
 	}
-    &__links{
-        & h2{
-            font-weight: FW(bold);
-            font-size: FS(mdx);
-        }
-    }
+	&__links {
+		& h2 {
+			font-weight: FW(bold);
+			font-size: FS(mdx);
+		}
+	}
 	&__link {
 		padding: 0.5rem;
 		& a {
 			font-size: FS(mdx);
 			color: $clr-dark-100;
+		
+		&:hover {
+			font-weight: FW(bold);
+			color: $clr-primary-300;
+			transition: all 0.3s;
 		}
 	}
+	}
 	&__social {
-        width: 20%;
-        cursor: pointer;
+		width: 20%;
+		cursor: pointer;
 		& img {
-			padding-bottom: 2rem ;
-            width: 100%;
-            border-bottom: 3px solid $clr-primary-300;
+			padding-bottom: 2rem;
+			width: 100%;
+			border-bottom: 3px solid $clr-primary-300;
 		}
-		i {
+		& i {
 			padding: 1rem;
+
+			&:hover {
+				color: $clr-primary-300;
+				transition: all 0.3s;
+			}
 		}
 	}
 }

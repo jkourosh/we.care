@@ -100,8 +100,8 @@ a {
 }
 
 .btn-primary:hover {
-  transform: scale(1.13);
-  -webkit-transform: scale(1.13);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -130,6 +130,14 @@ a {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 10rem;
+}
+
+.slider {
+  text-align: center;
+  background-color: white;
+  font-size: 10rem;
+  color: #014ed5;
+  margin: -3rem auto;
 }
 
 .nav {
@@ -509,7 +517,6 @@ a {
 .find i {
   position: relative;
   margin-right: 10px;
-  fill: #fff;
   vertical-align: baseline;
 }
 
@@ -520,6 +527,7 @@ a {
 }
 
 .find h3 {
+  display: inline-block;
   color: #102851;
   font-weight: 800;
   font-size: 1.7rem;
@@ -527,32 +535,46 @@ a {
 
 .find h4 {
   font-size: 1.4rem;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
   line-height: 2.5rem;
   color: #b3becf;
-  border-left: 2px solid #102851;
 }
 
 .find__middle {
+  width: 18%;
+  left: 18rem;
+  position: relative;
   background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
-  width: 15%;
+  -webkit-transition: background 0.5s, border 0.5s;
+  transition: background 0.5s, border 0.5s;
+  border: 2px solid transparent;
+  -webkit-box-shadow: #9e9e9e33 0px 2px 11px 0px;
+          box-shadow: #9e9e9e33 0px 2px 11px 0px;
 }
 
 .find__middle i {
-  display: inline-block;
+  top: 4rem;
+  left: 1rem;
 }
 
 .find__middle input {
   width: 100%;
+  padding-left: 3rem;
+  font-size: 1.7rem;
   line-height: 3.5rem;
   display: inline-block;
 }
 
 .find__middle h2 {
-  font-size: 1.7rem;
+  font-size: 2.6rem;
   font-weight: 800;
+}
+
+.find__middle button {
+  width: 100%;
+  margin: 0;
 }
 
 .find-icon {
@@ -560,6 +582,21 @@ a {
   padding: 1rem;
   border-radius: 50%;
   background-color: #eeeefd;
+}
+
+.find-icon::after {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  width: 2px;
+  height: 135%;
+  background-color: #b9b9b9;
+}
+
+.green {
+  background-color: #9ee09e;
+  color: #fff;
 }
 
 .why {
@@ -576,9 +613,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
 }
 
 .why__mid-wrapper {
@@ -596,8 +634,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   border-radius: 10px;
+  position: relative;
+  left: -5%;
 }
 
 .why__mid-item {
@@ -614,7 +654,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .why__mid-item img {
@@ -624,9 +664,15 @@ a {
   display: inline-block;
 }
 
+.why__mid-item h2 {
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+
 .why__mid-dot {
   font-size: 2rem;
   color: #b3becf;
+  cursor: pointer;
 }
 
 .why__right {
@@ -635,8 +681,26 @@ a {
 
 .why__right h2 {
   color: #102851;
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 800;
+}
+
+.why__right h3 {
+  color: #afafaf;
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+.why__right h4 {
+  font-size: 1.4rem;
+  color: #102851;
+  display: contents;
+  line-height: 3rem;
+}
+
+.why__right button {
+  font-size: large;
 }
 
 .why__right-item i {
@@ -644,12 +708,9 @@ a {
   color: #014ed5;
   border: 2px solid #014ed5;
   border-radius: 50%;
-}
-
-.why__right h4 {
-  font-size: 1.4rem;
-  color: #102851;
-  display: contents;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-right: 1rem;
 }
 
 .lp {
@@ -660,19 +721,18 @@ a {
   margin: 0 auto;
   text-align: center;
   background-color: #fff;
-  padding: 0 10rem;
+  padding: 3rem 10rem;
 }
 
 .meet h2 {
   color: #102851;
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 4rem;
   font-weight: 800;
 }
 
 .meet h4 {
   font-size: 1.7rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   line-height: 2.5rem;
   color: #b3becf;
 }
@@ -710,19 +770,43 @@ a {
 }
 
 .meet__dr {
-  background-color: #f7f8fc;
+  background-color: #f8f8f8;
   padding: 1rem;
   border-radius: 10px;
-  width: 20%;
   height: 38rem;
-  margin: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s, border 0.5s;
+  transition: background 0.5s, border 0.5s;
+  border: 2px solid transparent;
+  -webkit-box-shadow: #adadad33 0px 2px 11px 0px;
+          box-shadow: #adadad33 0px 2px 11px 0px;
+}
+
+.meet__dr h2 {
+  color: #102851;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.meet__dr img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.meet__dr:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #f7f8fc;
+  -webkit-box-shadow: 0 0 8px 1px #afafaf;
+          box-shadow: 0 0 8px 1px #afafaf;
 }
 
 .patient {
   margin: 0 auto;
   text-align: center;
   background-color: #fff;
-  padding: 0 10rem;
+  padding: 3rem 10rem;
 }
 
 .patient h2 {
@@ -756,6 +840,7 @@ a {
 .patient input {
   position: relative;
   left: 7rem;
+  font-size: 2.6rem;
 }
 
 .patient__left {
@@ -859,7 +944,7 @@ a {
 }
 
 .patient__subscribe {
-  margin: 10rem auto;
+  margin: 4rem auto;
   border-radius: 15px;
   background-color: #014ed5;
   padding: 4rem;
@@ -879,7 +964,7 @@ a {
 .patient__subscribe button {
   position: relative;
   left: -3.2rem;
-  top: 0.3rem;
+  top: -0.2rem;
   background-color: #102851;
   color: #ffffff;
   font-size: 1.7rem;
@@ -889,7 +974,12 @@ a {
   z-index: 999;
 }
 
+.footer {
+  background-color1: #fff;
+}
+
 .footer__wrapper {
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,7 +996,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 10rem;
+  padding: 0 10rem;
 }
 
 .footer__wrapper img {
@@ -927,6 +1017,13 @@ a {
   color: #1f2d3d;
 }
 
+.footer__link a:hover {
+  font-weight: 800;
+  color: #014ed5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .footer__social {
   width: 20%;
   cursor: pointer;
@@ -940,5 +1037,11 @@ a {
 
 .footer__social i {
   padding: 1rem;
+}
+
+.footer__social i:hover {
+  color: #014ed5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

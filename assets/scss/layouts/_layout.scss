@@ -74,8 +74,8 @@ a{
 	color: $clr-light-100;
 	&:hover {
 	
-		transform: scale(1.13);
-		-webkit-transform: scale(1.13);
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
 		box-shadow: none;
 		& i {
 			color: $clr-info-400;
@@ -100,4 +100,12 @@ a{
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 10rem;
+}
+.slider{
+	//width: 50%;
+	text-align: center;
+	background-color: white;
+	font-size: 10rem;
+	color: $clr-primary-300;
+	margin: -3rem auto;
 }

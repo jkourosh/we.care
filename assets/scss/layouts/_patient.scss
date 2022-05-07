@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	text-align: center;
 	background-color: #fff;
-	padding: 0 10rem;
+	padding: 3rem 10rem;
 	& h2 {
 		color: $clr-primary-400;
 		font-family: 'Roboto', sans-serif;
@@ -30,6 +30,7 @@
 	& input {
 		position: relative;
 		left: 7rem;
+		font-size: FS(lg);
 	}
 	&__left {
 		width: 40%;
@@ -71,7 +72,7 @@
 		font-size: FS(lg);
 	}
 	&__subscribe {
-		margin: 10rem auto;
+		margin: 4rem auto;
 		border-radius: 15px;
 		background-color: $clr-primary-300;
 
@@ -88,7 +89,7 @@
 		& button {
 			position: relative;
 			left: -3.2rem;
-			top: 0.3rem;
+			top: -0.2rem;
 			background-color: $clr-primary-400;
 			//border-radius: 10px;
 			color: $clr-light-100;

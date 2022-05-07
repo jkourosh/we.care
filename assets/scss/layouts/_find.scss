@@ -4,13 +4,14 @@
 	&__wrapper {
 		@include flex-between(row);
 	}
-    & i{
-       // display: inline;
-        position: relative;
-        margin-right: 10px;
-        fill: #fff;
-        vertical-align: baseline;
-    }
+	& i {
+		// display: inline;
+		position: relative;
+		margin-right: 10px;
+
+		vertical-align: baseline;
+	}
+
 	& h2 {
 		color: $clr-primary-400;
 		font-weight: FW(bold);
@@ -18,34 +19,52 @@
 		//padding: 15rem 5rem 1rem 5rem;
 	}
 	& h3 {
+		display: inline-block;
 		color: $clr-primary-400;
 		font-weight: FW(bold);
 		font-size: FS(md);
+
 		//padding: 15rem 5rem 1rem 5rem;
 	}
 	& h4 {
 		font-size: FS(sm);
-		padding: 2rem 0;
+		padding: 2rem 4rem;
 		line-height: 2.5rem;
 		color: $clr-secondary-100;
-        border-left: 2px solid $clr-primary-400;
+		
 	}
+
 	&__middle {
+		width: 18%;
+		left: 18rem;
+		position: relative;
 		background-color: #fff;
 		border-radius: 10px;
 		padding: 1rem;
-		width: 15%;
+		transition: background 0.5s, border 0.5s;
+		border: 2px solid transparent;
+
+		box-shadow: #9e9e9e33 0px 2px 11px 0px;
+
 		& i {
-			display: inline-block;
+			top: 4rem;
+			left: 1rem;
 		}
 		& input {
 			width: 100%;
+			padding-left: 3rem;
+			font-size: FS(md);
 			line-height: 3.5rem;
 			display: inline-block;
 		}
 		& h2 {
-			font-size: FS(md);
+			font-size: FS(lg);
 			font-weight: FW(bold);
+		}
+		& button{
+			width: 100%;
+			margin: 0;
+
 		}
 	}
 }
@@ -55,4 +74,17 @@
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: $clr-light-350;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 5rem;
+		left: 2rem;
+		width: 2px;
+		height: 135%;
+		background-color: $clr-light-400;
+	}
+}
+.green {
+	background-color: rgb(158, 224, 158);
+	color: #fff;
 }
