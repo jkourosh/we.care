@@ -499,8 +499,12 @@ a {
 }
 
 .popular__item img {
-  cursor: pointer;
   padding-left: 3rem;
+}
+
+.popular__item:hover {
+  background-color: #e3eefc;
+  border: 2px solid #102851;
 }
 
 .side-active {
