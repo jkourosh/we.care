@@ -63,8 +63,10 @@
 			align-items: flex-start;
 		}
 		&-dot {
-			font-size: 7rem;
-			color: $clr-primary-300;
+			left: 1rem;
+			& span{
+color: $clr-primary-300;
+			}
 		}
 	}
 	&__rate {

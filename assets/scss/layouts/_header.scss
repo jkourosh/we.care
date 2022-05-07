@@ -25,6 +25,10 @@
     & a{
         color: $clr-primary-400;
         font-size: FS(md);
+		&:hover {
+			color: $clr-primary-300;
+			
+		}
     }
 	& img {
 		display: inline-block;

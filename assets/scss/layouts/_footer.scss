@@ -1,5 +1,4 @@
 .footer {
-	background-color1 : #fff;
 	&__wrapper {
 		margin: 2rem 0;
 		@include flex-between(row);
@@ -21,29 +20,37 @@
 		& a {
 			font-size: FS(mdx);
 			color: $clr-dark-100;
-		
-		&:hover {
-			font-weight: FW(bold);
-			color: $clr-primary-300;
-			transition: all 0.3s;
+			&:hover {
+				font-style: italic;
+				font-weight: FW(bold);
+				color: $clr-primary-300;
+				transition: all 0.3s;
+				transform: scale(1.1);
+			}
 		}
-	}
 	}
 	&__social {
-		width: 20%;
+		width: 25%;
 		cursor: pointer;
-		& img {
+
+		& img{
 			padding-bottom: 2rem;
 			width: 100%;
-			border-bottom: 3px solid $clr-primary-300;
+			//border-bottom: 3px solid $clr-primary-300;
 		}
-		& i {
-			padding: 1rem;
-
+		& i{
+			color: $clr-light-100;
+			padding: .5rem;
+			border-radius: 5px;
+			background-color: $clr-primary-200;
+			margin: 1.5rem 1rem;
 			&:hover {
 				color: $clr-primary-300;
 				transition: all 0.3s;
 			}
+		}
+		&-row{
+			padding: 3rem 0;
 		}
 	}
 }

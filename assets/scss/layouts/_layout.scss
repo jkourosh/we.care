@@ -103,9 +103,14 @@ a{
 }
 .slider{
 	//width: 50%;
-	text-align: center;
+	
+
 	background-color: white;
 	font-size: 10rem;
-	color: $clr-primary-300;
-	margin: -3rem auto;
+	color: $clr-primary-200;
+	&:nth-child(1){
+		color: $clr-primary-300;
+	}
+	//margin: -3rem 1rem;
+	
 }
