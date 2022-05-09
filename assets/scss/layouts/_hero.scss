@@ -1,5 +1,5 @@
 .hero {
-	padding-top: 7rem;
+	padding-top: 4rem;
 	//background-color: $clr-primary-100;
 	&__wrapper {
 		@include flex-between(row);
@@ -12,10 +12,11 @@
 			color: $clr-primary-500;
 		}
 		& h4 {
-			font-size: FS(md);
+			font-size: FS(sm);
 			padding: 3rem 0;
 			line-height: 2.5rem;
-			color: $clr-secondary-100;
+			font-family: $font-family-montserrat;
+			color: $clr-light-400;
 		}
 		&-down {
 			@include flex-between(row);
@@ -30,6 +31,7 @@
 			color: $clr-light-100;
 			background-color: $clr-primary-400;
 			border-radius: 5px;
+			font-family: $font-family-opensans;
 			font-size: FS(sm);
 			gap: 1rem;
 			& img {
@@ -40,18 +42,25 @@
 	}
 
 	&__right {
+		& img{
+			width: 70rem;
+		}
 	}
 	&__search {
+		position: relative;
+		z-index: 999;
 		background-color: #fff;
 		padding: 3rem;
-		margin: 0 auto;
+		margin: -4rem auto;
 		width: 95%;
+		box-shadow: 3px 3px 9px 0px rgba(0,0,0,.1);
 		border-radius: 10px;
 		& form {
 			font-size: FS(mdx);
 		}
 		&-wrapper {
 			@include flex-between(row);
+			justify-content: flex-start;
 			gap: 1rem;
 		}
 		& input{
@@ -86,10 +95,12 @@
 		&-tag {
 			color: $clr-primary-400;
 			background-color: $clr-info-100;
+			font-family: $font-family-montserrat;
 			font-weight: FW(bold);
 			font-size: FS(sm);
 			padding: 1rem 1rem;
 			border-radius: 5px;
+			border: 1px solid $clr-info-200;
 		}
 		&-more {
 			color: $clr-primary-400;
@@ -97,7 +108,7 @@
 			width: 7%;
 			text-align: center;
 			font-weight: FW(bold);
-			font-size: FS(sm);
+			font-size: FS(md);
 			padding: 1rem 1rem;
 			border-radius: 5px;
 		}
@@ -110,24 +121,24 @@
 	position: absolute;
 }
 .p1 {
-	padding: 12rem;
-	top: 25rem;
-	left: 60%;
+	top: 28rem;
+	left: 62%;
+	padding: 10rem;
 }
 .p2 {
-	top: 16rem;
-	left: 54%;
-	padding: 20rem;
+	top: 23rem;
+	left: 58%;
+	padding: 15rem;
 }
 .p3 {
-	top: 7rem;
-	left: 46%;
-	padding: 30rem;
+	top: 16rem;
+	left: 53%;
+	padding: 21rem;
 }
 .p4 {
-	top: 16rem;
-	left: 54%;
-	padding: 22rem;
+	top: 7rem;
+	left: 46%;
+	padding: 31rem;
 }
 .m1{
 	position: relative;

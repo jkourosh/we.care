@@ -2,19 +2,19 @@
 	//display: inline-block;
 	@include flex-between(row);
 	justify-content: flex-start;
-	font-size: FS(sm);
+	font-size: FS(md);
 	font-weight: FW(bold);
 	padding: 0 2rem;
-	height: 7rem;
+	height: 9rem;
 
 	// box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 	& > ul {
 		@include flex-between(row);
 		padding-left: 5rem;
 		& li {
-			padding-left: 3rem;
+			padding-left: 5rem;
 			&:nth-child(4) {
-				padding-left: 35rem;
+				padding-left: 30rem;
 			}
 			&:nth-child(5) {
 				//padding:0 ;
@@ -24,6 +24,8 @@
 	}
     & a{
         color: $clr-primary-400;
+		font-family: $font-family-poppins;
+		font-weight: FW(bold);
         font-size: FS(md);
 		&:hover {
 			color: $clr-primary-300;

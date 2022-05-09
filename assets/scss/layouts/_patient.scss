@@ -6,17 +6,17 @@
 	& h2 {
 		color: $clr-primary-400;
 		font-family: 'Roboto', sans-serif;
-		font-size: FS(lgx);
+		font-size: FS(lgxx);
 		font-weight: FW(bold);
 		padding: 1rem 0;
 	}
 	& h3 {
 		color: $clr-primary-400;
-		font-size: FS(md);
+		font-size: FS(mdx);
 	}
 	& h4 {
 		font-size: FS(sm);
-		width: 60%;
+		width: 70%;
 		color: $clr-secondary-100;
 		text-align: left;
 		line-height: 3rem;
@@ -34,9 +34,10 @@
 	}
 	&__left {
 		width: 40%;
-        & img{
-            border-radius: 15px;
-        }
+		& img {
+			width: 100%;
+			border-radius: 15px;
+		}
 	}
 	&__right {
 		@include flex-between(column);
@@ -48,6 +49,7 @@
 	}
 	&__wrapper {
 		@include flex-between(row);
+		align-items: flex-end;
 		gap: 5rem;
 	}
 	&__profile {
@@ -64,8 +66,8 @@
 		}
 		&-dot {
 			left: 1rem;
-			& span{
-color: $clr-primary-300;
+			& span {
+				color: $clr-primary-300;
 			}
 		}
 	}
