@@ -18,8 +18,8 @@
 	&__link {
 		padding: 0.5rem;
 		& a {
-			font-size: FS(mdx);
-			color: $clr-dark-100;
+			font-size: FS(md);
+			color: $clr-light-400;
 			&:hover {
 				font-style: italic;
 				font-weight: FW(bold);
@@ -35,7 +35,7 @@
 
 		& img{
 			padding-bottom: 2rem;
-			width: 100%;
+			width: 80%;
 			//border-bottom: 3px solid $clr-primary-300;
 		}
 		& i{
@@ -47,6 +47,7 @@
 			&:hover {
 				color: $clr-primary-300;
 				transition: all 0.3s;
+				
 			}
 		}
 		&-row{

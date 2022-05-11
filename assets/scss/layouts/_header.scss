@@ -4,7 +4,7 @@
 	justify-content: flex-start;
 	font-size: FS(md);
 	font-weight: FW(bold);
-	padding: 0 2rem;
+	//padding: 0 2rem;
 	height: 9rem;
 
 	// box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -12,9 +12,9 @@
 		@include flex-between(row);
 		padding-left: 5rem;
 		& li {
-			padding-left: 5rem;
+			padding-left: 4rem;
 			&:nth-child(4) {
-				padding-left: 30rem;
+				padding-left: 34rem;
 			}
 			&:nth-child(5) {
 				//padding:0 ;
@@ -24,9 +24,9 @@
 	}
     & a{
         color: $clr-primary-400;
-		font-family: $font-family-poppins;
+		font-family: $font-family-abel;
 		font-weight: FW(bold);
-        font-size: FS(md);
+        font-size: FS(sm);
 		&:hover {
 			color: $clr-primary-300;
 			
@@ -34,7 +34,8 @@
     }
 	& img {
 		display: inline-block;
-		width: 10%;
+		
+		width: 15%;
 	}
 }
 

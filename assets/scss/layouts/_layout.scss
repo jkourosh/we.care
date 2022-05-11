@@ -11,7 +11,7 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
-body{
+body {
 	font-family: $font-family-abel;
 	background-color: $clr-info-100;
 	letter-spacing: 1px;
@@ -37,8 +37,7 @@ img {
 }
 input {
 	border: 1px solid $clr-teritary-100;
-	
-	
+
 	width: 38rem;
 	line-height: 5rem;
 	border-radius: 0.7rem;
@@ -51,14 +50,13 @@ input {
 button {
 	cursor: pointer;
 }
-a{
+a {
 	text-decoration: none;
 }
 .btn {
 	font-family: inherit;
 	background-color: transparent;
 	outline: 0;
-
 	cursor: pointer;
 	//box-shadow: 0 0 0 0.2rem $clr-info-400;
 	transition: all 0.3s ease-in-out;
@@ -66,14 +64,12 @@ a{
 	border-radius: 5px;
 }
 
-
 .btn-primary {
 	padding: 1rem 2.5rem;
-	margin: 1rem;	
+	margin: 1rem;
 	background-color: $clr-primary-300;
 	color: $clr-light-100;
 	&:hover {
-	
 		transform: scale(1.05);
 		-webkit-transform: scale(1.05);
 		box-shadow: none;
@@ -86,31 +82,29 @@ a{
 .btn-secondary {
 	box-shadow: 0 0 0 0.2rem $clr-info-400;
 	padding: 0.8rem 1rem;
-	margin: .5rem;
+	margin: 0.5rem;
 	color: $clr-info-400;
 	font-size: FS(xsm);
 	&:hover {
 		transform: scale(1.13);
 		-webkit-transform: scale(1.13);
-		background-color: transparent;color: $clr-info-400;
-		
+		background-color: transparent;
+		color: $clr-info-400;
 	}
 }
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 0 5rem;
+	padding: 0 6rem;
 }
-.slider{
+.slider {
 	//width: 50%;
-	
 
 	background-color: white;
 	font-size: 10rem;
 	color: $clr-primary-200;
-	&:nth-child(1){
+	&:nth-child(1) {
 		color: $clr-primary-300;
 	}
 	//margin: -3rem 1rem;
-	
 }

@@ -2,11 +2,13 @@
 @import 'media-query' ;
 
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0;300;500;800&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Abel:wght@300;500;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2؟family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
 
 @font-face {
 	font-family: 'Gilroy';
@@ -37,6 +39,8 @@ $font-family-montserrat: 'Montserrat', sans-serif;
 $font-family-gilroy: 'Gilroy', sans-serif;
 $font-family-urbanist: 'Urbanist', sans-serif;
 $font-family-abel: 'Abel', sans-serif;
+$font-family-fira: 'Fira Sans Condensed', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
 
 
 $font-sizes: (

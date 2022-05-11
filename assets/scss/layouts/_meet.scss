@@ -27,11 +27,11 @@
 		background-color: $clr-light-200;
 		padding: 1rem;
 		border-radius: 10px;
-	
+		
 		height: 38rem;
 		margin: 1rem;
 		cursor: pointer;
-		transition: background 0.5s, border 0.5s;
+		transition: all 0.5s, border 0.5s;
 		border: 2px solid transparent;
 
 		box-shadow: #adadad33 0px 2px 11px 0px;
@@ -45,7 +45,7 @@
             width: 23rem;
 		}
 		&:hover {
-			transition: all 0.5s;
+			
 			background-color: $clr-light-300;
 			box-shadow: 0 0 8px 1px $clr-light-500;
 			transform: scale(1.05);

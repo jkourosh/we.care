@@ -45,7 +45,7 @@
 		padding: 1rem;
 		& h2 {
 			color: $clr-primary-400;
-			font-family: $font-family-poppins;
+			font-family: $font-family-abel;
 			font-size: FS(lgxx);
 			font-weight: FW(bold);
            
@@ -74,12 +74,11 @@
 				//border-radius: 50%;
 			//	font-size: FS(md);
 				//font-weight: FW(bold);
-                margin-right: 1rem;
+                margin-right: 0rem;
 			}
           
 		}
 	}
 }
-.lp {
-	display: inline-block;
-}
+
+.ri-2x { font-size: 2.5em; line-height: 0.6666em; vertical-align: -.3em; }

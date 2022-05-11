@@ -25,7 +25,7 @@
 						<li class="nav__li"><a href="#">Health A to Z</a></li>
 						<li class="nav__li"><a href="#">Login</a></li>
 					</ul>
-					<button type="button" class="btn btn-primary">Sign In</button>
+					<button type="button" class="btn btn-side">Sign In</button>
 				</nav>
 			</div>
 		</head>
@@ -39,11 +39,11 @@
 						doctors, hospitals, and care for you and your family.</h4>
 						<div class="hero__left-down">
 						<button type="button" class="hero__left-btn">
-							<img src="./assets/img/ac.png" alt="ac">
+							<img src="./assets/img/01-Header/team.png" alt="ac">
 							Profile for Every</br> Doctor in America
 						</button>
 						<button type="button" class="hero__left-btn">
-							<img src="./assets/img/fing.png" alt="ac">
+							<img src="./assets/img/01-Header/rating.png" alt="ac">
 							More than 10 Milion</br> Patient Ratings
 						</button>
 					</div>
@@ -78,7 +78,7 @@
 							placeholder="Set your Location"
 							class="hero__search-loc"
 						/>
-						<button type="submit" class="btn btn-primary hero__search-btn">
+						<button type="submit" class="btn btn-side hero__search-btn">
 							<i class="ri-search-line ri-lg"></i>
 						</button>
 					</form>
@@ -94,15 +94,17 @@
 					</div>
 				</div>
 			</section>
-			<section class="popular">
+			<section class="popular container">
 				<h2>Popular Search on Wecare</h2>
 				<div class="popular__wrapper">
 					<div class="popular__side">
-						<div class="popular__side-row side-active">Specialties</div>
-						<div class="popular__side-row">Conditions</div>
-						<div class="popular__side-row">Procedures</div>
+						<div class="popular__side-row side-active" id="defaultOpen" onclick="openTab(event,'Spec')">Specialties</div>
+						<div class="popular__side-row" id="side2" onclick="openTab(event,'Cond')">Conditions</div>
+						<div class="popular__side-row" id="side3" onclick="openTab(event,'Proc')">Procedures</div>
 					</div>
-					<div class="popular__row">
+					<div class="popular__content">
+						
+					<div class="popular__row" id="Spec">
 						<div class="popular__item">
 							<img src="./assets/img/derma.png" alt="" />
 							Dermatology
@@ -128,13 +130,21 @@
 							Otolaryngology
 						</div>
 					</div>
+					<div class="popular__row" id="Cond">
+						Conditions  -   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, libero. Similique facere nisi molestiae corporis laborum atque, quibusdam dolor veritatis?
+					</div>
+                    <div class="popular__row" id="Proc">
+						Procedures - Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, atque optio molestiae sequi distinctio totam necessitatibus accusantium velit illum animi?
+
+	                </div>
+				</div>
 				</div>
 			</section>
-			<section class="find">
+			<section class="find container">
 				<div class="find__wrapper">
 					<div class="find__left">
 						<h2>Find the right doctor </br>right at your fingertips</h2>
-						<h4>Wecare give you the tools and information you need to</h4>
+						<h5>Wecare give you the tools and information you need to</h5>
 
 						<i class="ri-search-line ri-lg find-icon" ></i>
 						<h3>Search nearest hospital</h3>
@@ -164,7 +174,7 @@
 								class="find__box-loc"
 								placeholder="Set Location"
 							/>
-							<button type="submit" class="btn btn-primary find-button">Search</button>
+							<button type="submit" class="btn btn-side find-button">Search</button>
 						
 					</div>
 					<div class="find__right">
@@ -172,7 +182,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="why">
+			<section class="why container">
 				<div class="why__left">
 					<img src="./assets/img/31dr.png" alt="dr3" />
 				</div>
@@ -228,11 +238,11 @@
 							<i class="ri-checkbox-circle-line ri-2x"></i>
 							<h4>Lorem ipsum dolor sit amet consectetur  elit.</h4>
 						</div>
-						<button class="btn btn-primary">Get Free Consolation</button>
+						<button class="btn btn-side">Get Free Consolation</button>
 					</div>
 				
 			</section>
-			<section class="meet">
+			<section class="meet container">
 				<h2>Meet our Specialist</h2>
 				<h4>Wecare gives you the specialist and information you need to</h4>
 				<div class="meet__wrapper">
@@ -283,7 +293,7 @@
 				</div>
 			</section>
 			<!-- <div class="slider">&#8901;&#8901;&#8901;</div> -->
-			<section class="patient">
+			<section class="patient container">
 				<h2>Our Patients feedback about us</h2>
 				<h5>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum aperiam</br> sapiente quos
@@ -328,7 +338,7 @@ provident error laudantium reprehenderit consequatur!
 			
 			</section>
 		</main>
-		 <footer class="footer">
+		 <footer class="footer container">
 			<div class="footer__wrapper">
 				
 				<div class="footer__social">
@@ -377,5 +387,6 @@ provident error laudantium reprehenderit consequatur!
 				</div>
 			</div>
 		</footer> 
+		<script src="/assets/js/main.js"></script>
 	</body>
 </html>

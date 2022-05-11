@@ -26,8 +26,14 @@
 		//padding: 15rem 5rem 1rem 5rem;
 	}
 	& h4 {
-		font-size: FS(sm);
+		font-size: 1.5rem;//FS(sm);
 		padding: 2rem 3rem;
+		line-height: 2.5rem;
+		color: $clr-secondary-100;
+	}
+	& h5 {
+		font-size: 1.5rem;//FS(sm);
+		padding: 2rem 1rem;
 		line-height: 2.5rem;
 		color: $clr-secondary-100;
 	}
