@@ -504,6 +504,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0rem 5rem 0rem 0rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .popular h2 {
@@ -892,6 +895,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2rem;
 }
 
 .meet__dr {

@@ -22,6 +22,7 @@
 	}
 	&__row {
 		@include flex-between(row);
+		gap: 2rem;
 	}
 	&__dr {
 		background-color: $clr-light-200;
